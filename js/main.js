@@ -70,10 +70,22 @@ tabContents.forEach(tab => {
 })
 
 
-/*==================== PORTFOLIO SWIPER  ====================*/
+/*==================== PROJECT SWIPER  ====================*/
+let swiper = new Swiper('.project__container', {
+    cssMode: true,
+    loop: true, 
 
-
-/*==================== TESTIMONIAL ====================*/
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+    },
+    mousewheel: true,
+    keyboard: true,
+});
 
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
