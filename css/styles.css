@@ -280,19 +280,18 @@ img {
 }
 
 .home__content {
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    justify-content: center;
-    /* grid-template-columns: .5fr 3fr;
+    justify-content: center; */
+    grid-template-columns: .5fr 3fr;
     padding-top: 3.5rem;
-    align-items: center; */
+    align-items: center;
 }
 
 .home__social {
-    row-gap: 1rem;
-    /* display: grid;
+    display: grid;
     grid-template-columns: max-content;
-    row-gap: 1rem; */
+    row-gap: 1rem;
 }  
 
 .home__social-icon {
@@ -558,7 +557,7 @@ img {
     margin-bottom: var(--mb-2);
 }
 
-.qualificationn__button{
+.qualification__button{
     font-size: var(--h3-font-size);
     font-weight: var(--font-medium);
     cursor: pointer;
@@ -830,9 +829,233 @@ img {
 
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
+@media  screen and (max-width: 350px) {
+    .container {
+        margin-bottom: var(--mb-1);
+        margin-right: var(--mb-1);
+    }
 
+    .nav__menu{
+        padding: 2rem .25rem 4rem;
+    }
+
+    .nav__list {
+        column-gap: 0;
+    }
+
+    .home__content{
+        grid-template-columns: .25fr 3fr;
+    }
+
+    .home__blob {
+        width: 180px;
+    }
+
+    .skills__title{
+        font-size: var(--normal-font-size);
+    }
+
+    .qualification__data{
+        gap: .5rem;
+    }
+
+    .project__img {
+        width: 200px;
+    }
+}
 
 /* For medium devices */
+@media screen and (min-width: 568px){
+    .home__content{
+        grid-template-columns: max-content 1fr 1fr;
+    }
 
+    .home__data {
+        grid-column: initial;
+    }
+
+    .home__img {
+        order: 1;
+        justify-self: center;
+    }
+
+    .about__container,
+    .skills__container,
+    .project__container,
+    .contact__container,
+    .footer__container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .qualification__section {
+        display: grid;
+        grid-template-columns: .6fr;
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 768px){
+    .container{
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    body{
+        margin: 0;
+    }
+
+    .section{
+        padding: 6rem 0 2rem;
+    }
+
+    .section__subtitle{
+        margin-bottom: 4rem;
+    }
+
+    .header{
+        top: 0;
+        bottom: initial;
+    }
+
+    .hrader,
+    .main,
+    .footer__container{
+        padding: 0 1rem;
+    }
+
+    .nav{
+        height: calc(var(--header-height) + 1.5rem);
+        column-gap: 1rem;
+    }
+
+    .nav__icon,
+    .nav__close,
+    .nav__toogle {
+        display: none;
+    }
+
+    .nav__list{
+        display: flex;
+        column-gap: 2rem;
+    }
+
+    .nav__menu{
+        margin-left: auto;
+    }
+
+    .change-theme{
+        margin: 0;
+    }
+
+    .home__container{
+        row-gap: 5rem;
+    }
+
+    .home__content{
+        padding-top: 5.5rem;
+        column-gap: 2rem;
+    }
+
+    .home__blob{
+        width: 270px;
+    }
+
+    .home__scroll{
+        display: block;
+    }
+
+    .home__scroll-button{
+        margin-left: 3rem;
+    }
+
+    .about__container {
+        column-gap: 5rem;
+    }
+
+    .about__img{
+        width: 350px;
+    }
+
+    .about__description{
+        text-align: initial;
+    }
+
+    .about__info{
+        justify-content: space-between;
+    }
+
+    .about__button{
+        justify-content: initial;
+    }
+
+    .qualification__tabs {
+        justify-content: center;
+    }
+
+    .qualification__button {
+        margin: 0 var(--mb-1);
+    }
+
+    .qualification__section {
+        grid-template-columns: .5fr;
+    }
+
+    .footer__container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .footer__bg {
+        padding: 3rem 0 3.5rem;
+    }
+
+    .footer__links{
+        flex-direction: row;
+        column-gap: 2rem;
+    }
+
+    .footer__socials {
+        justify-self: flex-end;
+    }
+}
 
 /* For large devices */
+@media screen and (min-width: 1024px) {
+    .header,
+    .main,
+    .footer__container {
+        padding: 0;
+    }
+
+    .home__blob {
+        width: 320px;
+    }
+
+    .home__social{
+        transform: translateX(-6rem);
+    }
+
+    .project__content {
+        column-gap: 5rem;
+    }
+
+    .swiper-portfolio-icon {
+        font-size: 3.5rem;
+    }
+    .swiper-button-prev {
+        left: -3.5rem;
+    }
+    .swiper-button-next{
+        right: -3.5rem;
+    }
+    .swiper-container-horizontal > .swiper-pagination-bullets {
+        bottom: -4.5rem;
+    }
+
+    .contact__form {
+        width: 460px;
+    }
+
+    /* .contact__inputs {
+        grid-template-columns: repeat(2, 1fr);
+    } */
+}
