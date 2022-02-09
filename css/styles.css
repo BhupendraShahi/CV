@@ -618,7 +618,7 @@ img {
     display: block;
 }
 
-.qualification__button.qualification__Active {
+.qualification__button.qualification__active {
     color: var(--first-color);
 }
 
@@ -1009,8 +1009,9 @@ img {
     }
 
     .footer__links{
-        flex-direction: row;
-        column-gap: 2rem;
+        display:flex;
+        column-gap: 1.5rem;
+        padding-top: .5rem;
     }
 
     .footer__socials {
@@ -1052,10 +1053,11 @@ img {
     }
 
     .contact__form {
-        width: 460px;
+        width: 720px;
+        padding-left: 2rem;
     }
 
-    /* .contact__inputs {
+    .contact__inputs {
         grid-template-columns: repeat(2, 1fr);
-    } */
+    }
 }

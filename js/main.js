@@ -50,10 +50,10 @@ skillsHeader.forEach((el) => {
 })
 
 /*==================== QUALIFICATION TABS ====================*/
-const tab = document.querySelectorAll('[data-target]'),
-    tabContents = document.querySelectorAll('[data-content')
+const tabs = document.querySelectorAll('[data-target]'),
+    tabContents = document.querySelectorAll('[data-content]')
 
-tabContents.forEach(tab => {
+tabs.forEach(tab => {
     tab.addEventListener('click', ()=> {
         const target = document.querySelector(tab.dataset.target)
         
@@ -62,7 +62,7 @@ tabContents.forEach(tab => {
         })
         target.classList.add('qualification__active')
 
-        tab.forEach(tab => {
+        tabs.forEach(tab => {
             tab.classList.remove('qualification__active')
         })
         tab.classList.add('qualification__active')
