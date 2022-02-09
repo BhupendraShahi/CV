@@ -830,6 +830,8 @@ img {
 /*==================== MEDIA QUERIES ====================*/
 /* For small devices */
 @media  screen and (max-width: 350px) {
+
+
     .container {
         margin-bottom: var(--mb-1);
         margin-right: var(--mb-1);
@@ -898,6 +900,7 @@ img {
     .container{
         margin-left: auto;
         margin-right: auto;
+        padding: 1rem 1rem;
     }
 
     body{
