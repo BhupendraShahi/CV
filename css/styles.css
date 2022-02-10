@@ -887,6 +887,7 @@ img {
     .contact__container,
     .footer__container {
         grid-template-columns: repeat(2, 1fr);
+        gap: 2rem;
     }
 
     .qualification__section {
@@ -1056,8 +1057,7 @@ img {
     }
 
     .contact__form {
-        width: 720px;
-        padding-left: 2rem;
+        width: 550px;
     }
 
     .contact__inputs {
