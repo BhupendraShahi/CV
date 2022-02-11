@@ -493,47 +493,39 @@ img {
 }
 
 .skills__html {
-    width: 90%;
-}
-
-.skills__css {
-    width: 80%;
-}
-
-.skills__js {
-    width: 60%;
-}
-
-.skills__react {
     width: 85%;
 }
 
-.skills__php{
+.skills__css {
+    width: 75%;
+}
+
+.skills__js {
+    width: 70%;
+}
+
+.skills__react {
     width: 80%;
 }
 
 .skills__node{
-    width: 80%;
-}
-
-.skills__firebase{
-    width: 80%;
+    width: 75%;
 }
 
 .skills__express{
     width: 80%;
 }
 
+.skills__firebase{
+    width: 85%;
+}
+
 .skills__figma{
     width: 60%;
 }
 
-.skills__sketch{
-    width: 80%;
-}
-
 .skills__photoshop{
-    width: 85%;
+    width: 60%;
 }
 
 .skills__close .skills__list {
@@ -1057,7 +1049,7 @@ img {
     }
 
     .contact__form {
-        width: 550px;
+        width: 460px;
     }
 
     .contact__inputs {
