@@ -1,2 +1,2 @@
 # CV
-chek it out at: https://bhupendrashahi.github.io/Resume/
+chek it out at: https://bhupendrashahi.github.io/portfolio-website/
